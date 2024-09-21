@@ -1,0 +1,29 @@
+.rate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .card {
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+  }
+  
+  .gold-card {
+    background-color: gold;
+  }
+  
+  .silver-card {
+    background-color: silver;
+  }
+  
+  .card img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+  }
+  

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import GoldSilverRate from './GoldSilverRate';
+import './App.css'; // Include your main CSS here
 
 function App() {
+  useEffect(() => {
+    const audio = new Audio(); // Ensure to provide a correct path to your sound file
+    audio.play();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Gold and Silver</h1>
+      <GoldSilverRate />
     </div>
   );
 }
